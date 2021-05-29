@@ -28,5 +28,5 @@ def Audio():
     audio = YoutubeDL({'format':'bestaudio'})
     audio.extract_info(URL)
     Label(root, text = 'Completed', font = ('Bitstream Charter', 15, 'bold'), fg='white' ,bg='black').pack()
-button2 = Button(root,text = 'DOWNLOAD Audio', font = ('Bitstream Charter', 15, 'bold') ,bg = 'red', command = Audio).pack(side=BOTTOM)
+button3 = Button(root,text = 'DOWNLOAD Audio', font = ('Bitstream Charter', 15, 'bold') ,bg = 'red', command = Audio).pack(side=BOTTOM)
 root.mainloop()

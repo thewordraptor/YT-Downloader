@@ -22,6 +22,7 @@ def Downloader():
     video.download()
     Label(root, text = 'Completed', font = ('Bitstream Charter', 15, 'bold'), fg='white' ,bg='black').pack()
 button2 = Button(root,text = 'DOWNLOAD Video', font = ('Bitstream Charter', 15, 'bold') ,bg = 'red', padx = 2, command = Downloader).pack(side=BOTTOM)
+#Download audio
 def Audio():
     URL = str(link.get())
     audio = YoutubeDL({'format':'bestaudio'})
